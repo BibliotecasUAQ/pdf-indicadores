@@ -1,0 +1,361 @@
+$percentage-height : 40px;
+
+dl {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    flex-direction: column;
+    max-width: 60%;
+    position: relative;
+    padding: 20px;
+  }
+  
+  dt {
+    align-self: flex-start;
+    width: 100%; 
+    font-weight: 700;
+    display: block;
+    text-align: left;
+    font-size: small;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 75%;
+  }
+  
+  .text {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 0;
+    justify-content: flex-end;
+  }
+  
+  .percentage {
+    font-size: .8em;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    height: 20px;
+    margin-left: 40%;
+    background: repeating-linear-gradient(
+    to right,
+    rgba(220, 220, 235, 0),
+
+    rgba(19, 75, 56, 0.233) 5%
+  );
+    
+    &:after {
+      content: "";
+      display: block;
+      background-color: #9a9c9e;
+      width: 50px;
+      margin-bottom: 2px;
+      height: 70%;
+      position: relative;
+      top: 70%;
+      transform: translateY(-70%);
+      transition: background-color 1s ease;
+      cursor: pointer;
+    }
+    &:hover,
+    &:focus {
+      &:after {
+         background-color: rgb(195, 219, 247);
+         height: 20.5px;
+         transition: height .3s;
+      }
+    }
+  }
+  
+  @for $i from 1 through 100 {
+    .percentage-#{$i} {
+      &:after {
+        $value: ($i * 1%);
+        width: $value;
+      }
+    }
+  }
+
+  body {
+    margin: 0;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+    text-align: left;
+    background: rgb(241,146,146);
+background: linear-gradient(73deg, rgba(241,146,146,0.7124999828552931) 0%, rgba(96,104,168,0.5580056008328214) 48%, rgba(186,35,193,0.524297735664282) 100%);
+}
+
+h6 {
+    margin: 0 auto;
+    font-weight: 800;
+    color: gray; 
+  }
+  
+.encabezado {
+  font-size: 2rem;
+  font-weight: bolder;
+  color:rgb(179, 216, 247) ;
+  text-shadow: 1px 1px #7a7a7a,2px 2px #333236,3px 3px #292728;
+}  
+
+.mt-50 {
+    margin-top: 50px
+}
+
+.mb-50 {
+    margin-bottom: 50px
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.514);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .1875rem
+}
+
+.card-img-actions {
+    position: relative
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center;
+    border: solid, #333;
+}
+
+
+
+.card-title {
+    margin-top: 10px;
+    font-size: 17px
+}
+
+.logo-b {
+    max-width: 50%;
+}
+
+.card-header {
+    padding: .9375rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .02);
+    border-bottom: 1px solid rgba(0, 0, 0, .125)
+}
+
+a {
+    text-decoration: none !important
+}
+
+.btn-light {
+    color: #333;
+    background-color: #fafafa;
+    border-color: #ddd
+}
+
+.header-elements-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+@media (min-width: 768px) {
+    .wmin-md-400 {
+        min-width: 400px !important
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2196f3
+}
+
+.btn-labeled>b {
+    position: absolute;
+    top: -1px;
+    background-color: blue;
+    display: block;
+    line-height: 1;
+    padding: .62503rem
+}
+
+p {
+    font-family:sans-serif, Haettenschweiler;
+    font-size:smaller;
+}
+
+.grad {
+    background: rgba(137, 138, 139, 0.247);
+    background: linear-gradient(47deg, rgba(72, 87, 143, 0.164) 0%, rgba(158,158,158,0.8061157568496149) 100%); 
+}
+
+@keyframes change {
+    from {
+      opacity: 1;
+      border-radius: 0rem
+    }
+  
+    to {
+      opacity: .4;
+      border-radius: 2rem;
+    }
+  }
+  
+  .grad {
+    animation-duration: 1s;
+    animation-name: change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+
+
+
+
+  // Divider
+
+  $color-paid: #7fdbff;
+  $color-sent: #39cccc;
+  
+  #q-graph {
+    display: block; /* fixes layout wonkiness in FF1.5 */
+    position: relative; 
+    width: 600px; 
+    height: 300px;
+    margin: 1.1em 0 0; 
+    padding: 0;
+    background: transparent;
+    font-size: 11px;
+  }
+  
+  #q-graph caption {
+    caption-side: top; 
+    width: 600px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    top: -40px;
+    position: relative; 
+    z-index: 10;
+    font-weight: bold;
+  }
+  
+  #q-graph tr, #q-graph th, #q-graph td { 
+    position: absolute;
+    bottom: 0; 
+    width: 150px; 
+    z-index: 2;
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+  }
+  
+  #q-graph td {
+    transition: all .3s ease;
+    
+    &:hover {
+      background-color: desaturate(#85144b, 100);
+      opacity: .9;
+      color: white;
+    }
+  }
+    
+  #q-graph thead tr {
+    left: 100%; 
+    top: 50%; 
+    bottom: auto;
+    margin: -2.5em 0 0 5em;}
+  #q-graph thead th {
+    width: 7.5em; 
+    height: auto; 
+    padding: 0.5em 1em;
+  }
+  #q-graph thead th.sent {
+    top: 0; 
+    left: 0; 
+    line-height: 2;
+  }
+  #q-graph thead th.paid {
+    top: 2.75em; 
+    line-height: 2;
+    left: 0; 
+  }
+  
+  #q-graph tbody tr {
+    height: 296px;
+    padding-top: 2px;
+    border-right: 1px dotted #C4C4C4; 
+    color: #AAA;
+  }
+  #q-graph #q1 {
+    left: 0;
+  }
+  #q-graph #q2 {left: 150px;}
+  #q-graph #q3 {left: 300px;}
+  #q-graph #q4 {left: 450px; border-right: none;}
+  #q-graph tbody th {bottom: -1.75em; vertical-align: top;
+  font-weight: normal; color: #333;}
+  #q-graph .bar {
+    width: 60px; 
+    border: 1px solid; 
+    border-bottom: none; 
+    color: #000;
+  }
+  #q-graph .bar p {
+    margin: 5px 0 0; 
+    padding: 0;
+    opacity: .4;
+  }
+  #q-graph .sent {
+    left: 13px; 
+    background-color: $color-sent;
+    border-color: transparent;
+  }
+  #q-graph .paid {
+    left: 77px; 
+    background-color: $color-paid;
+    border-color: transparent;
+  }
+  
+  
+  #ticks {
+    position: relative; 
+    top: -300px; 
+    left: 2px;
+    width: 596px; 
+    height: 300px; 
+    z-index: 1;
+    margin-bottom: -300px;
+    font-size: 10px;
+    font-family: "fira-sans-2", Verdana, sans-serif;
+  }
+  
+  #ticks .tick {
+    position: relative; 
+    border-bottom: 1px dotted #C4C4C4; 
+    width: 600px;
+  }
+  
+  #ticks .tick p {
+    position: absolute; 
+    left: -5em; 
+    top: -0.8em; 
+    margin: 0 0 0 0.5em;
+  }

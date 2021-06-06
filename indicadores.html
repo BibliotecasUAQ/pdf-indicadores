@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Datos DGBSDI UAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" href="style2.css" /> -->
+    <script src="script.js"></script>
+    <script src="html2pdf.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container d-flex justify-content-center mt-50 mb-50">
+      <div class="row">
+        <div class="col-md-1 text-right mb-3">
+          <button class="btn btn-light" id="download">PDF</button>
+        </div>
+        <div class="col-md-12">
+          <div class="card" id="reporte">
+
+            <div class="card-body bg-transparent">
+              <div class="mb-0 ml-auto">
+                <img class="logo-b" src="logo.png">
+                <div class="d-flex flex-wrap wmin-md-400">
+                  <h6>Universidad Autónoma de Querétaro</h6>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="table-responsive">
+              <table class="table table-lg">
+
+                <tbody>
+
+                  <tr>
+                    <td>
+                      <h6 class="mb-0">Colecciones</h6>
+                      <span class="text-muted"
+                      >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium libero aperiam quo, veritatis laborum porro ex. Veritatis laborum est asperiores earum, totam impedit corporis voluptates quas et? Libero, voluptate minima.
+                      </span>
+
+                      <dl>
+                        <dt>
+                          Acervo bibliográfico
+                        </dt>
+                        <dd class="percentage percentage-25"><span class="text">Central: 25.1%</span></dd>
+                        <dd class="percentage percentage-10"><span class="text">FCPyS: 10.8%</span></dd>
+                        <dd class="percentage percentage-10"><span class="text">Filosofía: 10.4%</span></dd>
+                      </dl>
+
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <h6 class="mb-0">Circulación</h6>
+                      <span class="text-muted"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor</span
+                      >
+                      <table id="q-graph">
+                        <caption>Resultados anuales</caption>
+                        <thead>
+                        <tr>
+                        <th></th>
+                        <th class="sent">Externos</th>
+                        <th class="paid">Internos</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="qtr" id="q1">
+                        <th scope="row">2018</th>
+                        <td class="sent bar" style="height: 111px;"><p>3333</p></td>
+                        <td class="paid bar" style="height: 99px;"><p>3333</p></td>
+                        </tr>
+                        <tr class="qtr" id="q2">
+                        <th scope="row">2019</th>
+                        <td class="sent bar" style="height: 206px;"><p>3333</p></td>
+                        <td class="paid bar" style="height: 194px;"><p>3333</p></td>
+                        </tr>
+                        <tr class="qtr" id="q3">
+                        <th scope="row">2020</th>
+                        <td class="sent bar" style="height: 259px;"><p>3333</p></td>
+                        <td class="paid bar" style="height: 193px;"><p>3333</p></td>
+                        </tr>
+                        <tr class="qtr" id="q4">
+                        <th scope="row">2021</th>
+                        <td class="sent bar" style="height: 110px;"><p>3333</p></td>
+                        <td class="paid bar" style="height: 195px;"><p>3333</p></td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        
+                        <div id="ticks">
+                        <div class="tick" style="height: 59px;"><p>3333</p></div>
+                        <div class="tick" style="height: 59px;"><p>3333</p></div>
+                        <div class="tick" style="height: 59px;"><p>3333</p></div>
+                        <div class="tick" style="height: 59px;"><p>3333</p></div>
+                        <div class="tick" style="height: 59px;"><p>3333</p></div>
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <h6 class="mb-0">Technical support international</h6>
+                      <span class="text-muted"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor</span
+                      >
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="card-footer">
+              <p class="text-muted">
+                 La información consultada en este apartado es de
+                 caracter público. Las peticiones de información adicional
+                 requerida serán dirigidas al área de Tecnologías de la Información
+                 de la Dirección General de Bibliotecas y Servicios
+                 Digitales de la Información.
+              </p>
+              <span  class="text-muted">
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/"><img alt="Creative Commons License" style="border-width:0" src="lic.png" /></a><br />Publicación bajo licencia <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License</a>.
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
